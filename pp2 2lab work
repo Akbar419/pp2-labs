@@ -1,0 +1,139 @@
+#boolens in python can take true and false answers :
+
+# 1):
+
+print(10 > 9)
+print(10 == 9)
+print(10 < 9)
+
+# 2) :
+
+a = 200
+b = 33
+
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+
+
+# it allows you to evaluate any values :
+
+# 1st example:
+
+print(bool("Hello"))
+print(bool(15))
+
+# 2nd example:
+
+x = "Hello"
+y = 15
+
+print(bool(x))
+print(bool(y))
+
+# python operators :
+
+# we use "+" to add together two values :
+
+print(10 + 5)
+
+# python arithmetic operators :
+
++	Addition	x + y	
+-	Subtraction	x - y	
+*	Multiplication	x * y	
+/	Division	x / y	
+%	Modulus	x % y	
+**	Exponentiation	x ** y	
+//	Floor division	x // y
+
+# assignment operators :
+
+=	x = 5	x = 5	
++=	x += 3	x = x + 3	
+-=	x -= 3	x = x - 3	
+*=	x *= 3	x = x * 3	
+/=	x /= 3	x = x / 3	
+%=	x %= 3	x = x % 3	
+//=	x //= 3	x = x // 3	
+**=	x **= 3	x = x ** 3	
+&=	x &= 3	x = x & 3	
+|=	x |= 3	x = x | 3	
+^=	x ^= 3	x = x ^ 3	
+>>=	x >>= 3	x = x >> 3	
+<<=	x <<= 3	x = x << 3	
+:=	print(x := 3)	x = 3 print(x)
+
+# python lists :
+
+mylist = ["apple", "banana", "cherry"]
+
+# lists are used to store multiple items in a single variable, and are created using square brackets :
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+
+# lists can also have same values :
+
+thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+print(thislist)
+
+# we use fucntion 'len()' to find a length of the list :
+
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
+
+# lists items can be of any data types : 
+
+list1 = ["apple", "banana", "cherry"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, False]
+
+#also list can contain any values at the same time:
+
+list1 = ["abc", 34, True, 40, "male"]
+
+# from python's perspectives lists are defined as objects with the data type "list" :
+
+<class 'list'>
+
+mylist = ["apple", "banana", "cherry"]
+print(type(mylist))
+
+# use the function "list()" to create a list : 
+
+thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+print(thislist)
+
+# access list items :
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist[1])
+
+# you can also use negative indexing :
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])
+
+# when you need to return more than 1 element : 
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])
+
+# by leaving of the starter number it starts with the 1 value : 
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[:4])
+
+# by leaving of end number it ends with the last value :
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:])
+
+# and you can also use the negative numbers as the index : 
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[-4:-1])
+
+# "in" function 
