@@ -306,5 +306,126 @@ newlist = [x.upper() for x in fruits]
 
 newlist = ['hello' for x in fruits]
 
+# return orange insted of banana : 
+
+newlist = [x if x != "banana" else "orange" for x in fruits]
+
+# "sort()" function to sort the alphanumerically :
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+
+# numerically : 
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+
+# sort the list descending, you use (reverse = True) : 
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+
+# you can also customize your own function by using keyword key = function : 
+
+def myfunc(n):
+  return abs(n - 50)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
+
+# sorting can give an unexpected result : 
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort()
+print(thislist)
+
+# you can sort the function by the lower or upper words : 
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower)
+print(thislist)
+
+# reverse the sort() : 
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print(thislist)
+
+# ".copy()" use this function to copy lists :
+
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+
+# and you can also copy a list by using the function list() : 
+
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+
+# to copy you can use : operator :
+
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist[:]
+print(mylist)
+
+# you can use + to join lists : 
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)
+
+# joining one by one : 
+
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+for x in list2:
+  list1.append(x)
+
+print(list1)
+
+# method  extend is used for join the lists : 
+
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+list1.extend(list2)
+print(list1)
+
+# list methods : 
+
+append()	Adds an element at the end of the list
+clear()	Removes all the elements from the list
+copy()	Returns a copy of the list
+count()	Returns the number of elements with the specified value
+extend()	Add the elements of a list (or any iterable), to the end of the current list
+index()	Returns the index of the first element with the specified value
+insert()	Adds an element at the specified position
+pop()	Removes the element at the specified position
+remove()	Removes the item with the specified value
+reverse()	Reverses the order of the list
+sort()	Sorts the list
+
+# Tuples :
+
+mytuple = ("apple", "banana", "cherry")
+
+# creating a tuple : 
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+
+# you can have the items with the same value : 
+
+thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+print(thistuple)
+
 # 
 
