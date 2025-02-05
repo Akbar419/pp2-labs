@@ -427,5 +427,36 @@ print(thistuple)
 thistuple = ("apple", "banana", "cherry", "apple", "cherry")
 print(thistuple)
 
+# you can find the length of the tuple :
+
+thistuple = ("apple", "banana", "cherry")
+print(len(thistuple))
+
+# if you want to create a tuple with one item you should add comma in the end :
+
+thistuple = ("apple",)
+print(type(thistuple))
+
+#NOT a tuple
+thistuple = ("apple")
+print(type(thistuple))
+
+
+# tuple items can be any data type :
+
+tuple1 = ("apple", "banana", "cherry")
+tuple2 = (1, 5, 7, 9, 3)
+tuple3 = (True, False, False)
+
+# one tuple can contain many data types : 
+
+tuple1 = ("abc", 34, True, 40, "male")
+
+# in python tuple is classified as 'tuple' :
+
+mytuple = ("apple", "banana", "cherry")
+print(type(mytuple))
+
+
 # 
 
